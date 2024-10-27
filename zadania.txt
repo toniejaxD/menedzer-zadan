@@ -1,0 +1,23 @@
+1. test
+   Opis: testowanie
+   Termin wykonania: 1800-10-10
+   Status: Do wykonania
+   Priorytet: wysoki
+
+2. TESTP
+   Opis: testowaniep
+   Termin wykonania: 2000-10-02
+   Status: Wykonane
+   Priorytet: sredni
+
+3. TESTOWANIER
+   Opis: TESTOWANIE $ R
+   Termin wykonania: 2010-01-01
+   Status: Do wykonania
+   Powtarzalnoœæ: codziennie
+
+4. TESTZ
+   Opis: TESTowaniez
+   Termin wykonania: 2020-03-23
+   Status: Do wykonania
+

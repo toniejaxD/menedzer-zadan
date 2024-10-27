@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module zadania</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">zadania</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Citsno%5Cpycharmprojects%5Czadanie%5Czadania.py">c:\users\itsno\pycharmprojects\zadanie\zadania.py</a></td></tr></table>
+    <p><span class="code">#biblioteka&nbsp;datetime:&nbsp;służy<br>
+#&nbsp;do&nbsp;manipulacji&nbsp;datami&nbsp;i&nbsp;czasem&nbsp;w&nbsp;Pythonie.<br>
+#&nbsp;Umożliwia&nbsp;konwersję&nbsp;stringów&nbsp;na&nbsp;obiekty&nbsp;daty<br>
+#&nbsp;oraz&nbsp;formatowanie&nbsp;dat&nbsp;do&nbsp;czytelnej&nbsp;postaci.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="time.html">time</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="zadania.html#ManagerZadan">ManagerZadan</a>
+</dt><dt class="heading-text"><a href="zadania.html#Zadanie">Zadanie</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="zadania.html#ZadaniePriorytetowe">ZadaniePriorytetowe</a>
+</dt><dt class="heading-text"><a href="zadania.html#ZadanieRegularne">ZadanieRegularne</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ManagerZadan">class <strong>ManagerZadan</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Klasa&nbsp;zarządzająca&nbsp;listą&nbsp;zadań.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lista_zadan&nbsp;(list):&nbsp;Lista&nbsp;obiektów&nbsp;typu&nbsp;<a href="#Zadanie">Zadanie</a>.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="ManagerZadan-__init__"><strong>__init__</strong></a>(self)</dt><dd><span class="code">Inicjalizuje&nbsp;instancję&nbsp;klasy&nbsp;<a href="#ManagerZadan">ManagerZadan</a>.</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-dodaj_zadanie"><strong>dodaj_zadanie</strong></a> = wewnetrzna(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ManagerZadan-edytuj_zadanie"><strong>edytuj_zadanie</strong></a> = wewnetrzna(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ManagerZadan-oznacz_jako_wykonane"><strong>oznacz_jako_wykonane</strong></a> = wewnetrzna(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ManagerZadan-usun_zadanie"><strong>usun_zadanie</strong></a> = wewnetrzna(*args, **kwargs)</dt></dl>
+
+<dl><dt><a name="ManagerZadan-wczytaj_z_pliku"><strong>wczytaj_z_pliku</strong></a>(self, nazwa_pliku='zadania.txt')</dt><dd><span class="code">Wczytuje&nbsp;listę&nbsp;zadań&nbsp;z&nbsp;pliku&nbsp;tekstowego.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nazwa_pliku&nbsp;(str):&nbsp;Nazwa&nbsp;pliku&nbsp;do&nbsp;odczytu.&nbsp;Domyślnie&nbsp;'zadania.txt'.</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-wyswietl_zadania"><strong>wyswietl_zadania</strong></a>(self)</dt><dd><span class="code">Wyświetla&nbsp;listę&nbsp;zadań&nbsp;w&nbsp;czytelny&nbsp;sposób.</span></dd></dl>
+
+<dl><dt><a name="ManagerZadan-zapisz_do_pliku"><strong>zapisz_do_pliku</strong></a>(self, nazwa_pliku='zadania.txt')</dt><dd><span class="code">Zapisuje&nbsp;listę&nbsp;zadań&nbsp;do&nbsp;pliku&nbsp;tekstowego.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nazwa_pliku&nbsp;(str):&nbsp;Nazwa&nbsp;pliku&nbsp;do&nbsp;zapisu.&nbsp;Domyślnie&nbsp;'zadania.txt'.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Zadanie">class <strong>Zadanie</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Zadanie">Zadanie</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania)<br>
+&nbsp;<br>
+Reprezentuje&nbsp;zadanie&nbsp;do&nbsp;wykonania.<br>
+&nbsp;<br>
+Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tytul&nbsp;(str):&nbsp;Tytuł&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;opis&nbsp;(str):&nbsp;Opis&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;termin_wykonania&nbsp;(datetime):&nbsp;Termin&nbsp;wykonania&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;wykonane&nbsp;(bool):&nbsp;Status&nbsp;wykonania&nbsp;zadania.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Zadanie-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania)</dt><dd><span class="code">Inicjalizuje&nbsp;instancję&nbsp;klasy&nbsp;<a href="#Zadanie">Zadanie</a>.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tytul&nbsp;(str):&nbsp;Tytuł&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opis&nbsp;(str):&nbsp;Opis&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;termin_wykonania&nbsp;(str):&nbsp;Termin&nbsp;wykonania&nbsp;w&nbsp;formacie&nbsp;'YYYY-MM-DD'.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Jeśli&nbsp;termin&nbsp;wykonania&nbsp;nie&nbsp;jest&nbsp;w&nbsp;formacie&nbsp;'YYYY-MM-DD'.</span></dd></dl>
+
+<dl><dt><a name="Zadanie-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Zwraca&nbsp;czytelny&nbsp;opis&nbsp;zadania.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Opis&nbsp;zadania.</span></dd></dl>
+
+<dl><dt><a name="Zadanie-oznacz_wykonane"><strong>oznacz_wykonane</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ZadaniePriorytetowe">class <strong>ZadaniePriorytetowe</strong></a>(<a href="zadania.html#Zadanie">Zadanie</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#ZadaniePriorytetowe">ZadaniePriorytetowe</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania,&nbsp;priorytet)<br>
+&nbsp;<br>
+Reprezentuje&nbsp;zadanie&nbsp;priorytetowe,&nbsp;dziedziczy&nbsp;z&nbsp;klasy&nbsp;<a href="#Zadanie">Zadanie</a>.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;priorytet&nbsp;(str):&nbsp;Priorytet&nbsp;zadania&nbsp;(niski,&nbsp;średni,&nbsp;wysoki).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="zadania.html#ZadaniePriorytetowe">ZadaniePriorytetowe</a></dd>
+<dd><a href="zadania.html#Zadanie">Zadanie</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ZadaniePriorytetowe-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania, priorytet)</dt><dd><span class="code">Inicjalizuje&nbsp;instancję&nbsp;klasy&nbsp;<a href="#ZadaniePriorytetowe">ZadaniePriorytetowe</a>.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tytul&nbsp;(str):&nbsp;Tytuł&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opis&nbsp;(str):&nbsp;Opis&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;termin_wykonania&nbsp;(str):&nbsp;Termin&nbsp;wykonania&nbsp;w&nbsp;formacie&nbsp;'YYYY-MM-DD'.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;priorytet&nbsp;(str):&nbsp;Priorytet&nbsp;zadania&nbsp;(niski,&nbsp;średni,&nbsp;wysoki).<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Jeśli&nbsp;priorytet&nbsp;nie&nbsp;jest&nbsp;jednym&nbsp;z&nbsp;['niski',&nbsp;'sredni',&nbsp;'wysoki'].</span></dd></dl>
+
+<dl><dt><a name="ZadaniePriorytetowe-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Zwraca&nbsp;czytelny&nbsp;opis&nbsp;zadania&nbsp;priorytetowego.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Opis&nbsp;zadania&nbsp;priorytetowego.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><a name="ZadaniePriorytetowe-oznacz_wykonane"><strong>oznacz_wykonane</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ZadanieRegularne">class <strong>ZadanieRegularne</strong></a>(<a href="zadania.html#Zadanie">Zadanie</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#ZadanieRegularne">ZadanieRegularne</a>(tytul,&nbsp;opis,&nbsp;termin_wykonania,&nbsp;powtarzalnosc)<br>
+&nbsp;<br>
+Reprezentuje&nbsp;zadanie&nbsp;regularne,&nbsp;dziedziczy&nbsp;z&nbsp;klasy&nbsp;<a href="#Zadanie">Zadanie</a>.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;Attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;powtarzalnosc&nbsp;(str):&nbsp;Częstotliwość&nbsp;powtarzania&nbsp;zadania&nbsp;(np.&nbsp;codziennie,&nbsp;cotygodniowo).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="zadania.html#ZadanieRegularne">ZadanieRegularne</a></dd>
+<dd><a href="zadania.html#Zadanie">Zadanie</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ZadanieRegularne-__init__"><strong>__init__</strong></a>(self, tytul, opis, termin_wykonania, powtarzalnosc)</dt><dd><span class="code">Inicjalizuje&nbsp;instancję&nbsp;klasy&nbsp;<a href="#ZadanieRegularne">ZadanieRegularne</a>.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tytul&nbsp;(str):&nbsp;Tytuł&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opis&nbsp;(str):&nbsp;Opis&nbsp;zadania.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;termin_wykonania&nbsp;(str):&nbsp;Termin&nbsp;wykonania&nbsp;w&nbsp;formacie&nbsp;'YYYY-MM-DD'.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;powtarzalnosc&nbsp;(str):&nbsp;Częstotliwość&nbsp;powtarzania&nbsp;zadania.</span></dd></dl>
+
+<dl><dt><a name="ZadanieRegularne-__str__"><strong>__str__</strong></a>(self)</dt><dd><span class="code">Zwraca&nbsp;czytelny&nbsp;opis&nbsp;zadania&nbsp;regularnego.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Opis&nbsp;zadania&nbsp;regularnego.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><a name="ZadanieRegularne-oznacz_wykonane"><strong>oznacz_wykonane</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="zadania.html#Zadanie">Zadanie</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-zmierz_czas"><strong>zmierz_czas</strong></a>(funkcja)</dt><dd><span class="code">Dekorator&nbsp;do&nbsp;mierzenia&nbsp;czasu&nbsp;wykonania&nbsp;funkcji.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;funkcja&nbsp;(callable):&nbsp;Funkcja,&nbsp;której&nbsp;czas&nbsp;wykonania&nbsp;ma&nbsp;być&nbsp;mierzony.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable:&nbsp;Funkcja&nbsp;opakowana&nbsp;w&nbsp;mierzenie&nbsp;czasu.</span></dd></dl>
+</td></tr></table>
+</body></html>
