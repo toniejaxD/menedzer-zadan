@@ -35,10 +35,13 @@ Menedżer zadań - prosty projekt do zarządzania zadaniami.
    architektury oraz sposobu rozbudowy znajdziesz w pliku docs/.
 
    Żeby utworzyć takiego dokumentu trzeba wpisać takiego komendy:
-   1. Instalacja Sphinx"
+   
+   1. Instalacja Sphinx:
+
          pip install sphinx
 
-   2. Inicjalizacja Sphinx w projekcie:
+   3. Inicjalizacja Sphinx w projekcie:
+      
          sphinx-quickstart
 
       Utworzenie folderu docs:
@@ -49,17 +52,18 @@ Menedżer zadań - prosty projekt do zarządzania zadaniami.
 jeśli nie wygenerowało plik conf.py oraz index.rst, trzeba go utworzyć pliku w folderze docs i wpisać:
 
 ## conf.py:
-# Configuration file for the Sphinx documentation builder.
+
+#Configuration file for the Sphinx documentation builder.
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
-# -- Project information -----------------------------------------------------
+#-- Project information -----------------------------------------------------
 
 project = 'Nazwa Projektu'
 author = 'Twoje Imię'
 release = '0.1'
 
-# -- General configuration ---------------------------------------------------
+#-- General configuration ---------------------------------------------------
 
 extensions = [
     'sphinx.ext.autodoc',  # Enable docstring extraction
@@ -69,13 +73,14 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
-# -- Options for HTML output -------------------------------------------------
+#-- Options for HTML output -------------------------------------------------
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
 
 ## index.rst:
+
 .. Project name documentation master file, created by
    sphinx-quickstart on date.
 
