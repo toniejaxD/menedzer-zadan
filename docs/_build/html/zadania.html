@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>zadania module &#8212; Nazwa Projektu 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ZADANIE" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-zadania">
+<span id="zadania-module"></span><h1>zadania module<a class="headerlink" href="#module-zadania" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="zadania.ManagerZadan">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zadania.</span></span><span class="sig-name descname"><span class="pre">ManagerZadan</span></span><a class="headerlink" href="#zadania.ManagerZadan" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Klasa zarządzająca listą zadań.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Attributes:</dt><dd><p>lista_zadan (list): Lista obiektów typu Zadanie.</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.ManagerZadan.dodaj_zadanie">
+<span class="sig-name descname"><span class="pre">dodaj_zadanie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ManagerZadan.dodaj_zadanie" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.ManagerZadan.edytuj_zadanie">
+<span class="sig-name descname"><span class="pre">edytuj_zadanie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ManagerZadan.edytuj_zadanie" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.ManagerZadan.oznacz_jako_wykonane">
+<span class="sig-name descname"><span class="pre">oznacz_jako_wykonane</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ManagerZadan.oznacz_jako_wykonane" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.ManagerZadan.usun_zadanie">
+<span class="sig-name descname"><span class="pre">usun_zadanie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ManagerZadan.usun_zadanie" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.ManagerZadan.wczytaj_z_pliku">
+<span class="sig-name descname"><span class="pre">wczytaj_z_pliku</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nazwa_pliku</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zadania.txt'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ManagerZadan.wczytaj_z_pliku" title="Link to this definition">¶</a></dt>
+<dd><p>Wczytuje listę zadań z pliku tekstowego.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Args:</dt><dd><p>nazwa_pliku (str): Nazwa pliku do odczytu. Domyślnie ‘zadania.txt’.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.ManagerZadan.wyswietl_zadania">
+<span class="sig-name descname"><span class="pre">wyswietl_zadania</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ManagerZadan.wyswietl_zadania" title="Link to this definition">¶</a></dt>
+<dd><p>Wyświetla listę zadań w czytelny sposób.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.ManagerZadan.zapisz_do_pliku">
+<span class="sig-name descname"><span class="pre">zapisz_do_pliku</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nazwa_pliku</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zadania.txt'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ManagerZadan.zapisz_do_pliku" title="Link to this definition">¶</a></dt>
+<dd><p>Zapisuje listę zadań do pliku tekstowego.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Args:</dt><dd><p>nazwa_pliku (str): Nazwa pliku do zapisu. Domyślnie ‘zadania.txt’.</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="zadania.Zadanie">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zadania.</span></span><span class="sig-name descname"><span class="pre">Zadanie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tytul</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">termin_wykonania</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.Zadanie" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Reprezentuje zadanie do wykonania.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="zadania.Zadanie.tytul">
+<span class="sig-name descname"><span class="pre">tytul</span></span><a class="headerlink" href="#zadania.Zadanie.tytul" title="Link to this definition">¶</a></dt>
+<dd><p>Tytuł zadania.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="zadania.Zadanie.opis">
+<span class="sig-name descname"><span class="pre">opis</span></span><a class="headerlink" href="#zadania.Zadanie.opis" title="Link to this definition">¶</a></dt>
+<dd><p>Opis zadania.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="zadania.Zadanie.termin_wykonania">
+<span class="sig-name descname"><span class="pre">termin_wykonania</span></span><a class="headerlink" href="#zadania.Zadanie.termin_wykonania" title="Link to this definition">¶</a></dt>
+<dd><p>Termin wykonania zadania.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>datetime</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="zadania.Zadanie.wykonane">
+<span class="sig-name descname"><span class="pre">wykonane</span></span><a class="headerlink" href="#zadania.Zadanie.wykonane" title="Link to this definition">¶</a></dt>
+<dd><p>Status wykonania zadania.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zadania.Zadanie.oznacz_wykonane">
+<span class="sig-name descname"><span class="pre">oznacz_wykonane</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zadania.Zadanie.oznacz_wykonane" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="zadania.ZadaniePriorytetowe">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zadania.</span></span><span class="sig-name descname"><span class="pre">ZadaniePriorytetowe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tytul</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">termin_wykonania</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">priorytet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ZadaniePriorytetowe" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zadania.Zadanie" title="zadania.Zadanie"><code class="xref py py-class docutils literal notranslate"><span class="pre">Zadanie</span></code></a></p>
+<p>Reprezentuje zadanie priorytetowe, dziedziczy z klasy Zadanie.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Attributes:</dt><dd><p>priorytet (str): Priorytet zadania (niski, średni, wysoki).</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="zadania.ZadanieRegularne">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">zadania.</span></span><span class="sig-name descname"><span class="pre">ZadanieRegularne</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tytul</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">opis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">termin_wykonania</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">powtarzalnosc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.ZadanieRegularne" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#zadania.Zadanie" title="zadania.Zadanie"><code class="xref py py-class docutils literal notranslate"><span class="pre">Zadanie</span></code></a></p>
+<p>Reprezentuje zadanie regularne, dziedziczy z klasy Zadanie.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Attributes:</dt><dd><p>powtarzalnosc (str): Częstotliwość powtarzania zadania (np. codziennie, cotygodniowo).</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="zadania.zmierz_czas">
+<span class="sig-prename descclassname"><span class="pre">zadania.</span></span><span class="sig-name descname"><span class="pre">zmierz_czas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">funkcja</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zadania.zmierz_czas" title="Link to this definition">¶</a></dt>
+<dd><p>Dekorator do mierzenia czasu wykonania funkcji.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>funkcja</strong> (<em>callable</em>) – Funkcja, której czas wykonania ma być mierzony.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Funkcja opakowana w mierzenie czasu.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>callable</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Nazwa Projektu</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Spis treści</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">ZADANIE</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">zadania module</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">zadania module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#zadania.ManagerZadan"><code class="docutils literal notranslate"><span class="pre">ManagerZadan</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zadania.Zadanie"><code class="docutils literal notranslate"><span class="pre">Zadanie</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zadania.ZadaniePriorytetowe"><code class="docutils literal notranslate"><span class="pre">ZadaniePriorytetowe</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zadania.ZadanieRegularne"><code class="docutils literal notranslate"><span class="pre">ZadanieRegularne</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zadania.zmierz_czas"><code class="docutils literal notranslate"><span class="pre">zmierz_czas()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">ZADANIE</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">ZADANIE</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/zadania.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
