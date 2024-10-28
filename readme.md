@@ -37,4 +37,6 @@ Menedżer zadań - prosty projekt do zarządzania zadaniami.
 
    Karol Kołodyński
 
-   
+## Licencja
+
+   Ten projekt jest objęty licencją MIT - zobacz plik [LICENSE](./LICENSE) po więcej szczegółów.
